@@ -12,6 +12,6 @@ export class CarsWarehouseService {
 
   getCars(): Observable<string[]> {
 
-  return this.http.get<string[]>(this.baseUrl + "warehouse/cars");
+  return this.http.get<string[]>(this.baseUrl + "api/warehouse/cars");
   }
 }

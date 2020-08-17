@@ -36,6 +36,8 @@ namespace CW.WebApi
                 configuration.RootPath = "ClientApp/dist";
             });
 
+            services.ConfigureAuthentication(Configuration);
+
             CoreDiModule.ConfigureServices(services);
             CoreDiModule.ConfigureMessageConsumer<GetCarsMessage>(services);
             WebApiDiModule.ConfigureServices(services);
@@ -65,7 +67,8 @@ namespace CW.WebApi
             }
 
             app.UseRouting();
-
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
