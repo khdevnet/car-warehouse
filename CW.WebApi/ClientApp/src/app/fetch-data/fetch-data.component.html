@@ -1,0 +1,21 @@
+<h1 id="tableLabel">Cars Warehouse</h1>
+
+<p>This component demonstrates async fetching data from the server.</p>
+
+<button (click)="load()">Load Data</button>
+
+<p *ngIf="cars && !cars.length"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="cars && cars.length">
+  <thead>
+    <tr>
+      <th>Name</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let car of cars">
+      <td>{{ car.Name }}</td>
+    </tr>
+  </tbody>
+</table>
