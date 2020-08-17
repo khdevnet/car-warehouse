@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using CW.Core.Abstractions.MessageHandler;
+using CW.Core.Abstractions.MessageHandler.Dto;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading;

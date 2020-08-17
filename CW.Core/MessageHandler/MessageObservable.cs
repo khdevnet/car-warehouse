@@ -1,4 +1,5 @@
-﻿using CW.Core.MessageHandler;
+﻿using CW.Core.Abstractions.MessageHandler;
+using CW.Core.Abstractions.MessageHandler.Dto;
 using System;
 using System.Collections.Concurrent;
 using System.Reactive.Linq;

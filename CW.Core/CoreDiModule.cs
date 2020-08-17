@@ -1,4 +1,6 @@
-﻿using CW.Core.MessageHandler;
+﻿using CW.Core.Abstractions.MessageHandler;
+using CW.Core.Abstractions.MessageHandler.Dto;
+using CW.Core.MessageHandler;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CW.Core

@@ -1,4 +1,5 @@
-﻿using CW.Core.MessageHandler;
+﻿using CW.Core.Abstractions.MessageHandler;
+using CW.Core.MessageHandler;
 using CW.Core.Notifications;
 using Microsoft.Extensions.Logging;
 using System;

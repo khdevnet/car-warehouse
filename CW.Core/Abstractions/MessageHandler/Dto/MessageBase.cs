@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CW.Core.MessageHandler
+namespace CW.Core.Abstractions.MessageHandler.Dto
 {
     public abstract class MessageBase : IMessage
     {
